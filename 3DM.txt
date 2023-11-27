@@ -1,0 +1,3 @@
+3DM
+Istnieje hipergraf złożony z trzech oddzielnych zbiorów wierzchołków oraz zbioru hiperkrawędzi, łączących po trzy wierzchołki, po jednym z każdego zbioru wierzchołków.
+W maksymalnym trójwymiarowym dopasowaniu chodzi o znalezienie takiego podzbioru zbioru krawędzi o największej możliwej liczbie krawędzi, w którym żadne dwie krawędzie nie zawierają tego samego wierzchołka z któregokolwiek ze zbiorów wierzchołków.
