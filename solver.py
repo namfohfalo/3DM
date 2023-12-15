@@ -1,5 +1,6 @@
 import _3dm_generator as generator
 import algorytm_zachlanny as zachlanny
+import algorytm_zachlannylosowy as zachlanny_los
 import potegowy3DM as potegowy
 
 rozmiar_min = 2
@@ -18,7 +19,9 @@ zbior_x, zbior_y, zbior_z, zbior_t = generator.generator(rozmiar_min, rozmiar_ma
 # zbior_t = [[1, 2, 3], [2, 2, 4], [0, 1, 3], [3, 2, 0], [1, 1, 3], [2, 0, 1]]
 
 rozwiazanie_zachlanne = zachlanny.greedy_3dm(zbior_x, zbior_y, zbior_z, zbior_t)
+rozwiazanie_zachlanne_losowe = zachlanny_los.greedy_3dmrandom(zbior_t)
 rozwiazanie_potegowe = potegowy.power_set_3DM(zbior_t)
 
 print(f"zachlanne: {rozwiazanie_zachlanne}")
+print(f"zachlanne losowe:{rozwiazanie_zachlanne_losowe}")
 print(f"potegowe: {rozwiazanie_potegowe}")
